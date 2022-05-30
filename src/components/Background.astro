@@ -13,16 +13,32 @@ for (let y = 0; y < size; y++)
   {items.map(([x, y]) => <BgCell {...{ x, y}} />)}
 </div>
 
-<script define:vars={{allTiles: items}}>
-  async function ripple(x, y, col, height) {
+<script define:vars={{items}}>
+// quick! call the `window` abuse squad!
+window.allTiles = items;
+</script>
+
+<script>
+  import { EASE } from "crossani";
+
+  function animateCell(x, y) {
     const elem = document.getElementById(`bg-cell-${x}-${y}`);
-    elem.style.backgroundColor = col ?? "";
-    elem.style.setProperty("--t-up", height ?? 0);
+
+    elem.doTransition({
+      state: { 
+        "background-color": "#ec2a6a",
+        "transform": "translateY(-20px) scaleY(.5) rotate(45deg)"
+      },
+      ms: 500,
+      easing: EASE.ease
+    });
+    
+    setTimeout(() => elem.doTransition({reset: true}));
   }
 
   window.handleBgCellClick = (x, y) => {
     console.log("rippling bg cell", x, y);
-    ripple(x, y, "red", "-20px");
-    setTimeout(() => ripple(x, y), 1000);
+
+    animateCell(x, y);
   }
 </script>

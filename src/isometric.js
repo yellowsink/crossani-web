@@ -6,4 +6,5 @@ export const c2i = ([x, y]) => [(x - y), (x + y) / 2];
 export const tileVector = [.5, .5];
 
 // Isometric coordinates to cartesian coordinates
-export const i2c = ([x, y]) => [(x + y) / 2, (x - y)];
+// not actually used lmao
+//export const i2c = ([x, y]) => [(x + y) / 2, (x - y)];
