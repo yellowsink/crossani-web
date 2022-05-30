@@ -1,0 +1,28 @@
+---
+import BgCell from "./BgCell.astro";
+
+const items = [];
+const size = 40;
+
+for (let y = 0; y < size; y++)
+  for (let x = 0; x < size; x++)
+    items.push([x, y]);
+---
+
+<div class="transform translate-x-[50%] -translate-y-[40rem] -ml-[50px]">
+  {items.map(([x, y]) => <BgCell {...{ x, y}} />)}
+</div>
+
+<script define:vars={{allTiles: items}}>
+  async function ripple(x, y, col, height) {
+    const elem = document.getElementById(`bg-cell-${x}-${y}`);
+    elem.style.backgroundColor = col ?? "";
+    elem.style.setProperty("--t-up", height ?? 0);
+  }
+
+  window.handleBgCellClick = (x, y) => {
+    console.log("rippling bg cell", x, y);
+    ripple(x, y, "red", "-20px");
+    setTimeout(() => ripple(x, y), 1000);
+  }
+</script>

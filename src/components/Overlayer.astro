@@ -1,0 +1,10 @@
+---
+const { class: className } = Astro.props;
+---
+
+<style>
+  * > :global(*) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+</style>
+<div class={`grid ${className}`}><slot /></div>

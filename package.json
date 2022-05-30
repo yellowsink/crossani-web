@@ -1,0 +1,17 @@
+{
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^1.0.0-beta.37",
+    "crossani": "^1.1.1",
+    "vite-plugin-windicss": "^1.8.4",
+    "windicss": "^3.5.4"
+  }
+}
