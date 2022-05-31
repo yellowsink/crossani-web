@@ -1,8 +1,5 @@
 {
-  "editor.quickSuggestions": {
-    "strings": true
-  },
   "windicss.includeLanguages": {
-    "astro": "html"
+    "svelte": "html"
   }
 }

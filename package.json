@@ -1,17 +1,25 @@
 {
-  "name": "@example/minimal",
-  "version": "0.0.1",
+  "name": "crossani-web",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.37",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@tsconfig/svelte": "^2.0.1",
     "crossani": "^1.1.1",
-    "vite-plugin-windicss": "^1.8.4",
-    "windicss": "^3.5.4"
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.7",
+    "svelte-preprocess": "^4.9.8",
+    "svelte-windicss-preprocess": "^4.2.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "webfps": "^1.2.0"
   }
 }

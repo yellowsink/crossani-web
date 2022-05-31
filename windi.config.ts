@@ -9,7 +9,7 @@ export default defineConfig({
   },
   extract: {
     // you *probably* don't want to touch this
-    include: ["./src/**/*.{vue,html,jsx,tsx,astro}"],
+    include: ["./src/**/*.{vue,html,jsx,tsx,astro,svelte}"],
     exclude: ["node_modules", ".git"],
   },
 });
