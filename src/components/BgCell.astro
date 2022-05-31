@@ -4,23 +4,28 @@ import { tileVector as unitTileVector, c2i } from "../isometric"
 // cX and cY are real coords, iX and iY are transformed to isometric space
 const { x, y } = Astro.props;
 
-const [isoX, isoY] = c2i([x, y]);
+const extraSize = 10;
 
-const extraSize = 20;
+const yOffset = (x % 2) / 2;
 
-const tileVector = [(unitTileVector[0] * 50) + extraSize, (unitTileVector[1] * 50) + extraSize];
+const tileX = 32 + extraSize;
+const tileY = 32 + extraSize;
 
-const absX = isoX * tileVector[0];
-const absY = isoY * tileVector[1];
+const absX = x * tileX;
+const absY = (y + yOffset) * tileY;
+
+const z = (y * 2) + (x % 2)
 ---
 
 <style>
-  * { transform: scaleY(.5) rotate(45deg); }
+  * { 
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+   }
 </style>
 
 <div
   id={`bg-cell-${x}-${y}`}
-  class="absolute w-[50px] h-[50px] bg-blue-[#6a6aff]"
-  style={`left: ${absX}px; top: ${absY}px`}
+  class="absolute w-[64px] h-[32px] bg-blue-[#6a6aff]"
+  style={`left: ${absX}px; top: ${absY}px; z-index: ${z}`}
   onclick={`handleBgCellClick(${x},${y})`}
 />
