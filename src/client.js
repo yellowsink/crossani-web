@@ -1,7 +1,5 @@
 // CLIENT SIDE JS CODE
 
-import "webfps/dist/snippet";
-
 import { EASE } from "crossani";
 
 function animateCell(x, y) {

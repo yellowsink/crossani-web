@@ -4,14 +4,12 @@ specifiers:
   astro: ^1.0.0-beta.37
   crossani: ^1.1.1
   vite-plugin-windicss: ^1.8.4
-  webfps: ^1.2.0
   windicss: ^3.5.4
 
 devDependencies:
   astro: 1.0.0-beta.37
   crossani: 1.1.1
   vite-plugin-windicss: 1.8.4
-  webfps: 1.2.0
   windicss: 3.5.4
 
 packages:
@@ -3022,10 +3020,6 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /solid-js/1.4.3:
-    resolution: {integrity: sha512-3uh2cbT4ICronIasLAxycF6SVgvqcfwFCDCzlEA9CEahn1qQg8Rw8aRGiI4O51PrHcN5aPRO9knYYRCs0PgzcQ==}
-    dev: true
-
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -3536,12 +3530,6 @@ packages:
   /web-streams-polyfill/3.2.1:
     resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
     engines: {node: '>= 8'}
-    dev: true
-
-  /webfps/1.2.0:
-    resolution: {integrity: sha512-O+StbKXcmq8o40iySLqrd/yjOOtTZnx0J/3oDL2STX3XgYRipL7XwGAktlv1qdihntO9hvtbVAngVM/bmnYAYg==}
-    dependencies:
-      solid-js: 1.4.3
     dev: true
 
   /which-boxed-primitive/1.0.2:
