@@ -13,7 +13,7 @@ for (let y = 0; y < height; y++)
 // if anyone could tell me why this div needs a transform to be clipped correctly, let me know
 ---
 
-<div class="-mt-4 -ml-[32px] transform">
+<div id="bg-container" class="-mt-4 -ml-[32px] transform">
   {items.map(([x, y]) => <BgCell {...{ x, y}} />)}
 </div>
 

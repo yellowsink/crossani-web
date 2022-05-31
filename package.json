@@ -12,6 +12,7 @@
     "astro": "^1.0.0-beta.37",
     "crossani": "^1.1.1",
     "vite-plugin-windicss": "^1.8.4",
+    "webfps": "^1.2.0",
     "windicss": "^3.5.4"
   }
 }
