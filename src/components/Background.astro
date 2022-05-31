@@ -2,18 +2,16 @@
 import BgCell from "./BgCell.astro";
 
 const items = [];
-const width = 50;
-const height = 15;
+const width = 25;
+const height = 10;
 
 for (let y = 0; y < height; y++)
   for (let x = 0; x < width; x++)
     items.push([x, y]);
-
-// -mt-4 is -1rem
-// if anyone could tell me why this div needs a transform to be clipped correctly, let me know
 ---
 
-<div id="bg-container" class="-mt-4 -ml-[32px] transform">
+{/* if anyone could tell me why this div needs a transform to be clipped correctly, let me know */}
+<div id="bg-container" class="m-8 transform">
   {items.map(([x, y]) => <BgCell {...{ x, y}} />)}
 </div>
 
