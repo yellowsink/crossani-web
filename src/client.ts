@@ -1,7 +1,21 @@
 import "crossani";
 
+// used for caching
+let lastAllTiles;
+let elemCache = {};
+
+function rebuildCacheIfNeeded() {
+  // @ts-expect-error
+  if (lastAllTiles === allTiles) return;
+  // @ts-expect-error
+  lastAllTiles = allTiles;
+
+  for (const [x, y] of lastAllTiles)
+    elemCache[x + "-" + y] = document.getElementById(`bg-cell-${x}-${y}`);
+}
+
 function animateCell(x: number, y: number) {
-  const elem = document.getElementById(`bg-cell-${x}-${y}`);
+  const elem = elemCache[x + "-" + y];
 
   if (!elem) return;
 
@@ -33,6 +47,7 @@ function calculateDistances(x: number, y: number) {
 }
 
 function handleRippleStart(x: number, y: number) {
+  rebuildCacheIfNeeded();
   const sqDistances = calculateDistances(x, y);
 
   for (const [dist, cells] of sqDistances)

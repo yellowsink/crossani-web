@@ -30,8 +30,6 @@
         href="https://github.com/lexisother/CrossAni/tree/master/packages/solid-crossani#readme"
         >SolidJS support</Button
       >
-
-      <p>PS, Linux Chromium users: your browsers renders slow, sorry :p</p>
     </div>
   </Overlayer>
 </body>
