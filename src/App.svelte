@@ -1,8 +1,9 @@
 <script>
+	import "./client";
 	import Overlayer from "./lib/Overlayer.svelte";
 	import Background from "./lib/Background.svelte";
 	import Button from "./lib/Button.svelte";
-	import "./client";
+	import Springy from "./lib/Springy.svelte";
 
 	const isOnTouch = window.ontouchstart !== undefined;
 </script>
@@ -31,6 +32,8 @@
 
     <Button href="https://npmjs.com/@crossani/solid">SolidJS</Button>
     <Button href="https://npmjs.com/@crossani/react">React</Button>
+
+    <Springy />
   </div>
 </Overlayer>
 </body>

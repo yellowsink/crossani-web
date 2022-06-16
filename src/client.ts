@@ -25,7 +25,7 @@ function animateCell(x: number, y: number) {
       transform: "translateY(-20px)",
       "pointer-events": "none",
     },
-    ms: 250,
+    ms: 300,
   });
 
   elem.doTransition({ reset: true });
@@ -51,7 +51,7 @@ function handleRippleStart(x: number, y: number) {
   const sqDistances = calculateDistances(x, y);
 
   for (const [dist, cells] of sqDistances)
-    setTimeout(() => cells.forEach((c) => animateCell(...c)), dist * 150);
+    setTimeout(() => cells.forEach((c) => animateCell(...c)), dist * 300);
 }
 
 const parseCoordFromId = (id: string): [number, number] => [
@@ -82,7 +82,7 @@ window.beginAnimating = () => {
             Math.round(Math.random() * maxCell[0]),
             Math.round(Math.random() * maxCell[1])
           ),
-    4000
+    5000
   );
 
   let timeouts = 0;

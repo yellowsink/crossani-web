@@ -1,8 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@sveltejs/vite-plugin-svelte': ^1.0.0-next.49
-  '@tsconfig/svelte': ^2.0.1
+  '@crossani/spring': ^1.0.2
+  '@sveltejs/vite-plugin-svelte': 1.0.0-next.49
+  '@tsconfig/svelte': ^3.0.0
   crossani: ^1.3.0
   svelte: ^3.48.0
   svelte-check: ^2.7.2
@@ -13,10 +14,13 @@ specifiers:
   vite: ^2.9.12
   webfps: ^1.2.0
 
+dependencies:
+  '@crossani/spring': 1.0.2
+  crossani: 1.3.0
+
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.49_svelte@3.48.0+vite@2.9.12
-  '@tsconfig/svelte': 2.0.1
-  crossani: 1.3.0
+  '@tsconfig/svelte': 3.0.0
   svelte: 3.48.0
   svelte-check: 2.7.2_svelte@3.48.0
   svelte-preprocess: 4.10.7_dg7s4kx4gpzom5ifrkhkr632g4
@@ -33,6 +37,12 @@ packages:
     dependencies:
       '@types/throttle-debounce': 2.1.0
     dev: true
+
+  /@crossani/spring/1.0.2:
+    resolution: {integrity: sha512-OowbNc6W0HLSuePmtOscpNI8k6vkO66eYMRc2zgUO1p6Uu17kHTU89HKu2Y2ZSk3X+nXV2i84R/UaZbQv4yslg==}
+    dependencies:
+      crossani: 1.3.0
+    dev: false
 
   /@iconify/json/1.1.432:
     resolution: {integrity: sha512-ZcQKCnJXmeKDKxSu4vOFCYkCv8sjX1OASTMQpzqVzt3ivBBDudAYyXJlO4hgk0X4B2R0IMHRNvRgCAYkKDa2eQ==}
@@ -106,8 +116,8 @@ packages:
       - supports-color
     dev: true
 
-  /@tsconfig/svelte/2.0.1:
-    resolution: {integrity: sha512-aqkICXbM1oX5FfgZd2qSSAGdyo/NRxjWCamxoyi3T8iVQnzGge19HhDYzZ6NrVOW7bhcWNSq9XexWFtMzbB24A==}
+  /@tsconfig/svelte/3.0.0:
+    resolution: {integrity: sha512-pYrtLtOwku/7r1i9AMONsJMVYAtk3hzOfiGNekhtq5tYBGA7unMve8RvUclKLMT3PrihvJqUmzsRGh0RP84hKg==}
     dev: true
 
   /@types/node/18.0.0:
@@ -189,7 +199,7 @@ packages:
 
   /crossani/1.3.0:
     resolution: {integrity: sha512-IKDa494SeEy8zuTlBdhXYhQF8aHcDlXYEGRiNn/bkPy3ZKwHGQSyn8pyM3g97bhPQWZLesT5ttdq7zTnt94JWQ==}
-    dev: true
+    dev: false
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
