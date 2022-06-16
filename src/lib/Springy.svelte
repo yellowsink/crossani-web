@@ -18,8 +18,8 @@
 
 	onMount(async () => {
 		while (true) {
-			await anim(-5, 5, 250)
-			await anim(5, -5, 250)
+			await anim(-5, 5, 250);
+			await anim(5, -5, 250);
 		}
 	});
 </script>
