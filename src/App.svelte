@@ -32,6 +32,7 @@
 
     <Button href="https://npmjs.com/@crossani/solid">SolidJS</Button>
     <Button href="https://npmjs.com/@crossani/react">React</Button>
+    <Button href="https://npmjs.com/@crossani/svelte">Svelte</Button>
 
     <Springy />
   </div>
