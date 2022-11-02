@@ -27,12 +27,14 @@
     </Button>
     <Button href="https://npmjs.com/crossani">NPM</Button>
     <Button href="https://npmjs.com/@crossani/spring">Spring</Button>
+    <Button href="https://npmjs.com/@crossani/flip">FLIP</Button>
 
     <br/>
 
     <Button href="https://npmjs.com/@crossani/solid">SolidJS</Button>
     <Button href="https://npmjs.com/@crossani/react">React</Button>
     <Button href="https://npmjs.com/@crossani/svelte">Svelte</Button>
+    <Button href="https://npmjs.com/@crossani/vue">Vue 3</Button>
 
     <Springy />
   </div>
