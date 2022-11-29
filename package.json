@@ -10,7 +10,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
-    "@crossani/spring": "^1.0.3",
+    "@crossani/spring": "^1.1.0",
     "crossani": "^1.3.0"
   },
   "devDependencies": {
